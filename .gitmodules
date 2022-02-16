@@ -1,3 +1,6 @@
 [submodule "mediapipe"]
 	path = mediapipe
 	url = git@github.com:saeejithnair/mediapipe.git
+[submodule "MediaPipeUnityPlugin"]
+	path = MediaPipeUnityPlugin
+	url = https://github.com/homuler/MediaPipeUnityPlugin.git
