@@ -16,5 +16,11 @@ The core facial analysis architecture is executed by the subgraph `MobioResultPr
 
 ![image](https://user-images.githubusercontent.com/16181437/155273958-af054653-4e1c-42b4-bd31-cd5fb199dc51.png)
 
-The following diagram provides a more in-depth view of `MobioResultProcessor`.
+The following diagram provides a more in-depth view of `MobioResultProcessor`. The subgraph currently executes two calculators.
+- `MobioContourCalculator` which can be found in `mediapipe/graphs/mobio/calculators/mobio_contour_calculator.cc`
+- `MobioIntensityCalculator` which can be found in `mediapipe/graphs/mobio/calculators/mobio_intensity_calculator.cc`
 ![image](https://user-images.githubusercontent.com/16181437/155273790-25c7fec1-99bb-4cbe-8c0f-5054e6f3f3b6.png)
+
+TODOs:
+- Port over the contour radius calculator `MobioRadiusCalculator`
+- Extend support to measure pupil dilation.
