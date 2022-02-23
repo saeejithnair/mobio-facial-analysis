@@ -12,7 +12,9 @@ There are two main submodules in this repo.
 ### To run C++ Demo:
 `GLOG_logtostderr=1 bazel-bin/mediapipe/examples/desktop/mobio/mobio_facial_analysis --calculator_graph_config_file=mediapipe/graphs/mobio/facial_analysis_desktop_live.pbtxt`
 
-<img width="1200" alt="image" src="https://user-images.githubusercontent.com/16181437/155107737-e4327c58-1973-47b9-9f4e-2471079a3c0e.png">
+The core facial analysis architecture is executed by the subgraph `MobioResultProcessor`. The following diagram shows how `MobioResultProcessor` fits within the larger facial analysis system:
 
+![image](https://user-images.githubusercontent.com/16181437/155273958-af054653-4e1c-42b4-bd31-cd5fb199dc51.png)
 
-<img width="1211" alt="image" src="https://user-images.githubusercontent.com/16181437/155108128-9f71e8d7-ac40-4afc-9ab7-f41006eef98e.png">
+The following diagram provides a more in-depth view of `MobioResultProcessor`.
+![image](https://user-images.githubusercontent.com/16181437/155273790-25c7fec1-99bb-4cbe-8c0f-5054e6f3f3b6.png)
