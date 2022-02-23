@@ -2,12 +2,12 @@
 
 ## Overview
 There are two main submodules in this repo. 
-- `mediapipe` contains the code for running the demo on Android and C++. The Android demo is the same as last term, the code hasn't been updated.
+- [mediapipe](https://github.com/saeejithnair/mediapipe/tree/snair/main) contains the code for running the demo on Android and C++. The Android demo is the same as last term, the code hasn't been updated.
 - `MediaPipeUnityPlugin` contains demo code for building and running the demo in Unity and to deploy it on Android/iOS devices.
 
 Of these, the most useful code to start with is the facial analysis demo that was ported to C++.
-- `mediapipe/graphs/mobio` contains the core source C++ files for performing facial analysis. 
-- The main C++ demo entry point can be found in `mediapipe/examples/desktop/mobio`.
+- [mediapipe/graphs/mobio](https://github.com/saeejithnair/mediapipe/tree/snair/main/mediapipe/graphs/mobio) contains the core source C++ files for performing facial analysis. 
+- The main C++ demo entry point can be found in [mediapipe/examples/desktop/mobio](https://github.com/saeejithnair/mediapipe/tree/snair/main/mediapipe/examples/desktop/mobio).
 
 ## Usage
 ### To build C++ Demo:
