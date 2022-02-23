@@ -8,10 +8,10 @@ There are two main submodules in this repo.
 - Core C++ Demo code can be found in `mediapipe/graphs/mobio`
 
 ### To build C++ Demo:
-`bazel build -c opt --define MEDIAPIPE_DISABLE_GPU=1 media^Cpe/examples/desktop/face_mesh:face_mesh_cpu_mobio`
+`bazel build -c dbg --define MEDIAPIPE_DISABLE_GPU=1 mediapipe/examples/desktop/mobio:mobio_facial_analysis`
 
 ### To run C++ Demo:
-`GLOG_logtostderr=1 bazel-bin/mediapipe/examples/desktop/face_mesh/face_mesh_cpu_mobio --calculator_graph_config_file=mediapipe/graphs/face_mesh/face_mesh_desktop_live_mobio.pbtxt`
+`GLOG_logtostderr=1 bazel-bin/mediapipe/examples/desktop/mobio/mobio_facial_analysis --calculator_graph_config_file=mediapipe/graphs/mobio/facial_analysis_desktop_live.pbtxt`
 
 <img width="1200" alt="image" src="https://user-images.githubusercontent.com/16181437/155107737-e4327c58-1973-47b9-9f4e-2471079a3c0e.png">
 
